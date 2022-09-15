@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0" spacing="20.0" style="-fx-background-color: #FF69B4;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calc.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" translateY="-10.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#feffe8" height="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Text fx:id="output" />
+         </children>
+      </StackPane>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processnum" prefHeight="50.0" prefWidth="50.0" text="7">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processnum" prefHeight="50.0" prefWidth="50.0" text="8">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processnum" prefHeight="50.0" prefWidth="50.0" text="9">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processoperator" prefHeight="50.0" prefWidth="50.0" text="/">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processnum" prefHeight="50.0" prefWidth="50.0" text="4">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processnum" prefHeight="50.0" prefWidth="50.0" text="5">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processnum" prefHeight="50.0" prefWidth="50.0" text="6">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processoperator" prefHeight="50.0" prefWidth="50.0" text="*">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processnum" prefHeight="50.0" prefWidth="50.0" text="1">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processnum" prefHeight="50.0" prefWidth="50.0" text="2">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processnum" prefHeight="50.0" prefWidth="50.0" text="3">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processoperator" prefHeight="50.0" prefWidth="50.0" text="+">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processnum" prefHeight="50.0" prefWidth="100.0" text="0">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processoperator" prefHeight="50.0" prefWidth="50.0" text="=">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#processoperator" prefHeight="50.0" prefWidth="50.0" text="-">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+
+
+   </children>
+</VBox>
